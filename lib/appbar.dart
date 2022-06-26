@@ -1,21 +1,13 @@
 import 'package:chainpay/color_const.dart';
 import 'package:flutter/material.dart';
 
+import 'common_widgets/noti_icon.dart';
+import 'common_widgets/search.dart';
 import 'login.dart';
 
 ApB(BuildContext context) {
   return AppBar(
-    title: Container(
-      child: TextField(
-          decoration: InputDecoration(
-        hintText: "Search Users,ID’s etc",
-        hintStyle: TextStyle(
-          fontFamily: "spartan",
-          fontWeight: FontWeight.w700,
-          color: Color(0xffB0BEC5),
-        ),
-      )),
-    ),
+    title: Container(child: searchField("Search Users,ID’s etc")),
     leading: InkWell(
       onTap: () {
         Navigator.push(
@@ -29,29 +21,39 @@ ApB(BuildContext context) {
       ),
     ),
     flexibleSpace: Container(
-      padding: EdgeInsets.all(50),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-            Color(ColorConstants.appbar2),
-            Color(ColorConstants.appbar2),
+            Color(0xff1F222A),
+            Color(0xff1F222A),
+            Color(ColorConstants.appbar2)
           ])),
     ),
-    actions: <Widget>[
-      CircleAvatar(
-        backgroundColor: Color(ColorConstants.coomon_border),
-        child: IconButton(
-          icon: Icon(
-            Icons.notifications_outlined,
-            color: Color(ColorConstants.coomon_icon),
-          ),
-          onPressed: () {
-            // do something
-          },
+    actions: <Widget>[notiIcon()],
+    bottom: TabBar(
+      indicatorColor: Color(ColorConstants.btnTextColor),
+      indicatorWeight: 5,
+      indicatorSize: TabBarIndicatorSize.label,
+      indicator: ShapeDecoration(
+          shape: RoundedRectangleBorder(
+              borderRadius:
+                  BorderRadius.only(bottomRight: Radius.circular(10)))),
+      tabs: <Widget>[
+        Tab(
+          text: "Home",
         ),
-      )
-    ],
+        Tab(
+          text: "Balanace",
+        ),
+        Tab(
+          text: "Offers",
+        ),
+        Tab(
+          text: "Rewards",
+        ),
+      ],
+    ),
   );
 }

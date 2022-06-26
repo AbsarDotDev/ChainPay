@@ -1,3 +1,4 @@
+import 'package:chainpay/tab_bar.dart';
 import 'package:chainpay/text_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
@@ -5,9 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
-
 import 'color_const.dart';
-import 'home.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -85,7 +84,7 @@ class _LoginState extends State<Login> {
                   onTap: () {
                     Navigator.pushReplacement(
                       context,
-                      MaterialPageRoute(builder: (context) => const Home()),
+                      MaterialPageRoute(builder: (context) => const TabBaar()),
                     );
                   },
                   child: Container(
