@@ -1,10 +1,6 @@
 import 'package:chainpay/tab_bar.dart';
 import 'package:chainpay/text_constants.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 import 'color_const.dart';
 
@@ -22,7 +18,7 @@ class _LoginState extends State<Login> {
       body: Container(
         height: MediaQuery.of(context).size.height * 1,
         width: MediaQuery.of(context).size.width * 1,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/login.png"),
             fit: BoxFit.cover,
@@ -34,7 +30,7 @@ class _LoginState extends State<Login> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 111,
                 ),
                 Text(
@@ -48,11 +44,11 @@ class _LoginState extends State<Login> {
                       fontSize: 25),
                 ),
                 Image.asset("assets/images/login_vector.png"),
-                SizedBox(
+                const SizedBox(
                   height: 60,
                 ),
                 IntlPhoneField(
-                  flagsButtonPadding: EdgeInsets.only(left: 14),
+                  flagsButtonPadding: const EdgeInsets.only(left: 14),
                   dropdownTextStyle: TextStyle(
                       color: Color(ColorConstants.btnColor),
                       fontSize: 15,
@@ -60,18 +56,17 @@ class _LoginState extends State<Login> {
                   showDropdownIcon: false,
                   textAlign: TextAlign.center,
                   decoration: InputDecoration(
-                    contentPadding: EdgeInsets.only(left: 67),
+                    contentPadding: const EdgeInsets.only(left: 67),
                     filled: true,
                     fillColor: Color(ColorConstants.inputFillColor),
                     hintText: TextConstants.loginTxt3,
-                    hintStyle: TextStyle(
+                    hintStyle: const TextStyle(
                       fontFamily: "spartan",
                       fontWeight: FontWeight.w700,
                       color: Color(0xff858891),
                     ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20),
-                      borderSide: BorderSide(),
                     ),
                   ),
                   initialCountryCode: 'PK',
@@ -88,6 +83,12 @@ class _LoginState extends State<Login> {
                     );
                   },
                   child: Container(
+                    height: 46,
+                    width: MediaQuery.of(context).size.width * 1,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color(ColorConstants.btnColor),
+                    ),
                     child: Center(
                       child: Text(
                         TextConstants.loginBtnTxt,
@@ -98,15 +99,9 @@ class _LoginState extends State<Login> {
                             fontWeight: FontWeight.w700),
                       ),
                     ),
-                    height: 46,
-                    width: MediaQuery.of(context).size.width * 1,
-                    decoration: new BoxDecoration(
-                      borderRadius: BorderRadius.circular(20),
-                      color: Color(ColorConstants.btnColor),
-                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 17,
                 ),
                 Center(
@@ -118,7 +113,7 @@ class _LoginState extends State<Login> {
                         fontSize: 14),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 9,
                 ),
                 Center(
@@ -130,7 +125,7 @@ class _LoginState extends State<Login> {
                         fontSize: 11),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 52,
                 ),
               ],

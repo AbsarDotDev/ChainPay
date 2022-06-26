@@ -1,8 +1,6 @@
 import 'package:chainpay/color_const.dart';
 import 'package:chainpay/common_widgets/button_shadow.dart';
 import 'package:chainpay/text_constants.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 
 import 'login.dart';
@@ -33,8 +31,8 @@ class Open extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => const Login()),
                   );
                 },
-                child: shadow_button(TextConstants.instantPay)),
-            SizedBox(
+                child: shadowButton(TextConstants.instantPay)),
+            const SizedBox(
               height: 10,
             ),
             Text(
@@ -44,7 +42,7 @@ class Open extends StatelessWidget {
                   color: Color(ColorConstants.paraTxt),
                   fontSize: 10),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Center(

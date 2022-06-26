@@ -8,6 +8,6 @@ class ColorConstants {
   static int inputFillColor = 0xffEDEFFF;
   static int appbar1 = 0xff343645;
   static int appbar2 = 0xff1F222A;
-  static int coomon_icon = 0xff97A3AB;
-  static int coomon_border = 0xff343645;
+  static int commonIcon = 0xff97A3AB;
+  static int commonBorder = 0xff343645;
 }

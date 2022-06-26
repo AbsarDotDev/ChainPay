@@ -5,15 +5,14 @@ import 'common_widgets/noti_icon.dart';
 import 'common_widgets/search.dart';
 import 'login.dart';
 
-ApB(BuildContext context) {
+apB(BuildContext context) {
   return AppBar(
+    toolbarHeight: 80,
+    backgroundColor: Color(ColorConstants.baseColor),
     title: Column(
       children: [
-        SizedBox(
-          height: 20,
-        ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             InkWell(
               onTap: () {
@@ -23,7 +22,7 @@ ApB(BuildContext context) {
                 );
               },
               child: CircleAvatar(
-                backgroundColor: Color(ColorConstants.coomon_border),
+                backgroundColor: Color(ColorConstants.commonBorder),
                 child: Image.asset("assets/images/avatar.png"),
               ),
             ),
@@ -35,25 +34,25 @@ ApB(BuildContext context) {
     ),
     automaticallyImplyLeading: false,
     flexibleSpace: Container(
-      padding: EdgeInsets.all(100),
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
+          borderRadius: BorderRadius.only(bottomRight: Radius.circular(20)),
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,
               colors: <Color>[
-            Color(0xff1F222A),
-            Color(0xff1F222A),
-            Color(ColorConstants.appbar2)
-          ])),
+                Colors.transparent,
+                Color.fromARGB(148, 31, 34, 42),
+                Color(0xff1F222A)
+              ])),
     ),
-    actions: <Widget>[],
+    elevation: 0,
     bottom: TabBar(
-      labelStyle: TextStyle(
-          fontFamily: "Inter", fontWeight: FontWeight.w600, fontSize: 14),
+      labelStyle: const TextStyle(
+          fontFamily: "Inter", fontWeight: FontWeight.w600, fontSize: 15),
       indicatorColor: Color(ColorConstants.btnTextColor),
       indicatorWeight: 5,
       indicatorSize: TabBarIndicatorSize.label,
-      tabs: <Widget>[
+      tabs: const <Widget>[
         Tab(
           child: Text(
             "Home",

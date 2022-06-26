@@ -7,14 +7,14 @@ searchField(String txt, BuildContext context) {
     child: TextField(
       decoration: InputDecoration(
         suffixIcon: Icon(Icons.search_outlined,
-            color: Color(ColorConstants.coomon_icon)),
+            color: Color(ColorConstants.commonIcon)),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.0),
         ),
         filled: true,
-        fillColor: Color(ColorConstants.coomon_border),
+        fillColor: Color(ColorConstants.commonBorder),
         hintText: txt,
-        hintStyle: TextStyle(
+        hintStyle: const TextStyle(
           fontFamily: "spartan",
           fontWeight: FontWeight.w600,
           color: Color(0xffB0BEC5),
