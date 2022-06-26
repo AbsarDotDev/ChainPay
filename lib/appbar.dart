@@ -27,7 +27,7 @@ apB(BuildContext context) {
               ),
             ),
             Center(child: searchField("Search Users,ID’s etc", context)),
-            notiIcon(),
+            notiIcon(context),
           ],
         ),
       ],

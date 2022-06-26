@@ -11,6 +11,8 @@ class TextConstants {
   static String homeHead4 = "More Services";
   static String homeHead5 = "Recent Transactions";
 
+  static String notitext = "Notification";
+  static String notitext1 = "Recent Notification";
   static String homeHeadButton = "More";
   static String loginBtnTxt = "Verify";
 }
