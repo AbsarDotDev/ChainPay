@@ -7,20 +7,35 @@ import 'login.dart';
 
 ApB(BuildContext context) {
   return AppBar(
-    title: Container(child: searchField("Search Users,ID’s etc")),
-    leading: InkWell(
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const Login()),
-        );
-      },
-      child: CircleAvatar(
-        backgroundColor: Color(ColorConstants.coomon_border),
-        child: Image.asset("assets/images/avatar.png"),
-      ),
+    title: Column(
+      children: [
+        SizedBox(
+          height: 20,
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Login()),
+                );
+              },
+              child: CircleAvatar(
+                backgroundColor: Color(ColorConstants.coomon_border),
+                child: Image.asset("assets/images/avatar.png"),
+              ),
+            ),
+            Center(child: searchField("Search Users,ID’s etc", context)),
+            notiIcon(),
+          ],
+        ),
+      ],
     ),
+    automaticallyImplyLeading: false,
     flexibleSpace: Container(
+      padding: EdgeInsets.all(100),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
@@ -31,27 +46,37 @@ ApB(BuildContext context) {
             Color(ColorConstants.appbar2)
           ])),
     ),
-    actions: <Widget>[notiIcon()],
+    actions: <Widget>[],
     bottom: TabBar(
+      labelStyle: TextStyle(
+          fontFamily: "Inter", fontWeight: FontWeight.w600, fontSize: 14),
       indicatorColor: Color(ColorConstants.btnTextColor),
       indicatorWeight: 5,
       indicatorSize: TabBarIndicatorSize.label,
-      indicator: ShapeDecoration(
-          shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.only(bottomRight: Radius.circular(10)))),
       tabs: <Widget>[
         Tab(
-          text: "Home",
+          child: Text(
+            "Home",
+            textAlign: TextAlign.center,
+          ),
         ),
         Tab(
-          text: "Balanace",
+          child: Text(
+            "Balance",
+            textAlign: TextAlign.center,
+          ),
         ),
         Tab(
-          text: "Offers",
+          child: Text(
+            "Offer",
+            textAlign: TextAlign.center,
+          ),
         ),
         Tab(
-          text: "Rewards",
+          child: Text(
+            "Rewards",
+            textAlign: TextAlign.center,
+          ),
         ),
       ],
     ),

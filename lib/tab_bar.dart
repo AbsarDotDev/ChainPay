@@ -21,15 +21,17 @@ class _TabBaarState extends State<TabBaar> {
     return DefaultTabController(
         initialIndex: 1,
         length: 4,
-        child: Scaffold(
-          appBar: ApB(context),
-          body: const TabBarView(
-            children: <Widget>[
-              Home(),
-              Balance(),
-              Offer(),
-              Rewards(),
-            ],
+        child: SafeArea(
+          child: Scaffold(
+            appBar: ApB(context),
+            body: const TabBarView(
+              children: <Widget>[
+                Home(),
+                Balance(),
+                Offer(),
+                Rewards(),
+              ],
+            ),
           ),
         ));
   }

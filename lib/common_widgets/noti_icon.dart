@@ -4,14 +4,7 @@ import '../color_const.dart';
 
 notiIcon() {
   return CircleAvatar(
-      backgroundColor: Color(ColorConstants.coomon_border),
-      child: IconButton(
-        icon: Icon(
-          Icons.notifications_outlined,
-          color: Color(ColorConstants.coomon_icon),
-        ),
-        onPressed: () {
-          // do something
-        },
-      ));
+    backgroundColor: Color(ColorConstants.coomon_border),
+    child: Image.asset("assets/images/notification.png"),
+  );
 }

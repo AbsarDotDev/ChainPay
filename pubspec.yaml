@@ -76,6 +76,9 @@ flutter:
     - family: Russo
       fonts:
         - asset: assets/fonts/russo.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter.ttf
     - family: Play
       fonts:
         - asset: assets/fonts/play.ttf
