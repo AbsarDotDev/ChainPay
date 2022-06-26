@@ -7,6 +7,10 @@ class TextConstants {
   static String loginTxt3 = "Enter Mobile Number";
   static String homeHead1 = "Money Transfer";
   static String homeHead2 = "Recharge & Bill Payments";
+  static String homeHead3 = "Ticket Booking";
+  static String homeHead4 = "More Services";
+  static String homeHead5 = "Recent Transactions";
+
   static String homeHeadButton = "More";
   static String loginBtnTxt = "Verify";
 }
