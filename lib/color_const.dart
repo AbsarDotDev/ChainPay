@@ -19,4 +19,8 @@ class ColorConstants {
   static int tilecolor4 = 0xff73274e;
   static int tilecolor44 = 0xff242042;
   static int serviceBox = 0xff242042;
+  static int notificationbackground = 0xff181A20;
+  static int notificationtext = 0xff9A9B9B;
+  static int homecard = 0xff1F222A;
+  static int homecard1 = 0xffB8B8B8;
 }
