@@ -15,4 +15,17 @@ class TextConstants {
   static String notitext1 = "Recent Notification";
   static String homeHeadButton = "More";
   static String loginBtnTxt = "Verify";
+  static String baltit1 = "Portfolio Value";
+  static String balsub1 = "54,375";
+  static String balsubs1 = "In 3 Accounts";
+  static String baltit2 = "Federel Bank";
+  static String balsub2 = "1142524899652";
+  static String balsubs2 = "16,456.05";
+  static String baltit3 = "States Bank";
+  static String balsub3 = "1142524899652";
+  static String balsubs3 = "2045.05";
+  static String baltit4 = "Best Bank";
+  static String balsub4 = "1142521547852";
+  static String balsubs4 = "35873.5";
+  static String balbut = "Add / Manage Accounts";
 }

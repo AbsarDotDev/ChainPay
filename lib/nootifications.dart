@@ -58,7 +58,7 @@ class _NotificationsState extends State<Notifications> {
                   trailing: CircleAvatar(
                     backgroundColor: Colors.transparent,
                     child: IconButton(
-                      icon: Icon(Icons.close_outlined),
+                      icon: const Icon(Icons.close_outlined),
                       color: Color(ColorConstants.btnTextColor),
                       onPressed: () {
                         Navigator.push(
@@ -71,7 +71,7 @@ class _NotificationsState extends State<Notifications> {
                 ),
                 ListView.builder(
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   itemBuilder: (context, index) => ListTile(
                     title: Text(
                       noti[index],
@@ -126,7 +126,7 @@ class _NotificationsState extends State<Notifications> {
                   ),
                   trailing: CircleAvatar(
                       backgroundColor: Colors.transparent,
-                      child: Image.asset('assets/images/arrow.png')),
+                      child: Image.asset('assets/images//arrow.png')),
                 ),
               ],
             ),

@@ -17,7 +17,7 @@ shadowButton(String txt) {
             3.5, // Move to right 10  horizontally
             3.5, // Move to bottom 10 Vertically
           ),
-        )
+        ),
       ],
     ),
     child: Center(

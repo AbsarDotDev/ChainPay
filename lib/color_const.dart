@@ -23,4 +23,12 @@ class ColorConstants {
   static int notificationtext = 0xff9A9B9B;
   static int homecard = 0xff1F222A;
   static int homecard1 = 0xffB8B8B8;
+  static int balcont1 = 0xff652A5F;
+  static int balcont2 = 0xff442A65;
+  static int balcont3 = 0xff2A6550;
+  static int balcommon = 0xffB0BEC5;
+  static int balconttxt1 = 0xffF4EDFF;
+  static int balconttxt2 = 0xffFFFEDF1;
+  static int balconttxt3 = 0xffEDFFF4;
+  static int commonCont = 0xff343645;
 }
