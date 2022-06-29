@@ -1,4 +1,5 @@
 import 'package:chainpay/color_const.dart';
+import 'package:chainpay/profile.dart';
 import 'package:flutter/material.dart';
 
 import 'common_widgets/noti_icon.dart';
@@ -18,7 +19,7 @@ apB(BuildContext context) {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const Login()),
+                  MaterialPageRoute(builder: (context) => const Profile()),
                 );
               },
               child: CircleAvatar(

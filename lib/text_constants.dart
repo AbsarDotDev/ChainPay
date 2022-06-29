@@ -10,7 +10,11 @@ class TextConstants {
   static String homeHead3 = "Ticket Booking";
   static String homeHead4 = "More Services";
   static String homeHead5 = "Recent Transactions";
-
+  static String profileName = "Elsa";
+  static String profileLevel = "Level 4 Ace Member";
+  static String profileTransaction = "1208";
+  static String profilePoints = "726";
+  static String profileRank = "8";
   static String notitext = "Notification";
   static String notitext1 = "Recent Notification";
   static String homeHeadButton = "More";
