@@ -31,4 +31,9 @@ class ColorConstants {
   static int balconttxt2 = 0xffFFFEDF1;
   static int balconttxt3 = 0xffEDFFF4;
   static int commonCont = 0xff343645;
+  static int blankCont = 0xff242042;
+  static int rewardbut = 0xffFA4D96;
+  static int rewardcont = 0xff422038;
+  static int rewardtxt1 = 0xffC2AAAA;
+  static int rewardtxt = 0xffAAAAAA;
 }

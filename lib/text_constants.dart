@@ -28,4 +28,15 @@ class TextConstants {
   static String balsub4 = "1142521547852";
   static String balsubs4 = "35873.5";
   static String balbut = "Add / Manage Accounts";
+  static String rewardtxt1 = "Casbacks earned";
+  static String rewardtxt2 = "507";
+  static String rewardtxt3 = "+ 88 Rs This month";
+  static String rewardbut = "View your cashback history";
+  static String rewardhead1 = "Scrachcards won";
+  static String rewardhead2 = "Collect Rewards";
+  static String rewardconttxt1 = "Flat 50 off On food Delivery";
+  static String rewardconttxt2 = "On orders above 99 on Swaggy, Somato";
+  static String rewardbutt = "Collect Now";
+  static String rewardconttxt3 = "20% Cashback On Amason";
+  static String rewardconttxt4 = "Up to Rs 150 Minimum Order 1000";
 }
