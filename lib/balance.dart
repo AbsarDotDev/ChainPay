@@ -100,7 +100,6 @@ class _BalanceState extends State<Balance> {
                       Color(ColorConstants.balconttxt1),
                     ),
                     context),
-                const SizedBox(width: 18),
                 container(
                     Color(ColorConstants.balcont2),
                     balContTxt(

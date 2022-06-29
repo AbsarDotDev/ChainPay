@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import '../text_constants.dart';
 import 'common_heading.dart';
 
-blankCont() {
+blankCont(context) {
   return Container(
-    width: 100,
+    width: MediaQuery.of(context).size.width * 0.3,
     height: 100,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
