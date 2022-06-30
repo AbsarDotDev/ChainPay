@@ -1,5 +1,4 @@
 import 'package:chainpay/profile.dart';
-import 'package:chainpay/tab_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'open.dart';
