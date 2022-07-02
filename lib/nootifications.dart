@@ -1,5 +1,7 @@
+import 'package:chainpay/appbar.dart';
 import 'package:chainpay/color_const.dart';
 import 'package:chainpay/home.dart';
+import 'package:chainpay/tab_bar.dart';
 import 'package:chainpay/text_constants.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +65,8 @@ class _NotificationsState extends State<Notifications> {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const Home()),
+                          MaterialPageRoute(
+                              builder: (context) => const TabBaar()),
                         );
                       },
                     ),
