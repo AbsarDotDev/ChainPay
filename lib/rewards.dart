@@ -20,6 +20,7 @@ class _RewardsState extends State<Rewards> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
+        height: MediaQuery.of(context).size.height * 1,
         padding: const EdgeInsets.only(top: 14, left: 12, right: 12),
         color: Color(ColorConstants.baseColor),
         child: Column(
