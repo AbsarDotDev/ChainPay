@@ -18,11 +18,11 @@ class Rewards extends StatefulWidget {
 class _RewardsState extends State<Rewards> {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        height: MediaQuery.of(context).size.height * 1,
-        padding: const EdgeInsets.only(top: 14, left: 12, right: 12),
-        color: Color(ColorConstants.baseColor),
+    return Container(
+      height: MediaQuery.of(context).size.height * 1,
+      padding: const EdgeInsets.only(top: 14, left: 12, right: 12),
+      color: Color(ColorConstants.baseColor),
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Container(

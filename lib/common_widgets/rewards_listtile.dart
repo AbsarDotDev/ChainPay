@@ -16,36 +16,40 @@ rewardslisttile(context, String s, String t, tx,
     ),
     child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
       Image.asset("../assets/images/$s"),
-      const SizedBox(width: 14),
-      Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            t,
-            style: TextStyle(
-              fontWeight: FontWeight.w600,
-              fontSize: 15,
-              fontFamily: "Nunito",
-              color: Color(ColorConstants.btnTextColor),
-            ),
-          ),
-          const SizedBox(
-            height: 6,
-          ),
-          redeem,
-          Text(
-            tx,
-            style: TextStyle(
+      SizedBox(
+        width: MediaQuery.of(context).size.width * 0.05,
+      ),
+      Expanded(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              t,
+              style: TextStyle(
                 fontWeight: FontWeight.w600,
-                fontSize: 10,
+                fontSize: 15,
                 fontFamily: "Nunito",
-                color: Color(ColorConstants.btnTextColor)),
-          ),
-          const SizedBox(
-            height: 8,
-          ),
-          b
-        ],
+                color: Color(ColorConstants.btnTextColor),
+              ),
+            ),
+            const SizedBox(
+              height: 6,
+            ),
+            redeem,
+            Text(
+              tx,
+              style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 10,
+                  fontFamily: "Nunito",
+                  color: Color(ColorConstants.btnTextColor)),
+            ),
+            const SizedBox(
+              height: 8,
+            ),
+            b
+          ],
+        ),
       ),
     ]),
   );

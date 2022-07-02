@@ -18,7 +18,7 @@ collectNow() {
           TextConstants.rewardbutt,
           style: TextStyle(
               fontFamily: 'Nunito',
-              color: Color(ColorConstants.rewardbut),
+              color: Color(ColorConstants.btnTextColor),
               fontSize: 15,
               fontWeight: FontWeight.w600),
         ),

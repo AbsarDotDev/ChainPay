@@ -19,18 +19,20 @@ smallIconTIle(String img, String txt, int c1, int c2, BuildContext context) {
           child: SizedBox(
               width: 40, child: Image.asset("../assets/images/icons/$img")),
         ),
-        Container(
-          padding: const EdgeInsets.only(left: 10),
-          height: 43,
-          child: Center(
-              child: Text(
-            txt,
-            style: TextStyle(
-                fontFamily: "spartan",
-                fontWeight: FontWeight.w600,
-                fontSize: 12,
-                color: Color(ColorConstants.btnTextColor)),
-          )),
+        Expanded(
+          child: Container(
+            padding: const EdgeInsets.only(left: 10),
+            height: 43,
+            child: Center(
+                child: Text(
+              txt,
+              style: TextStyle(
+                  fontFamily: "spartan",
+                  fontWeight: FontWeight.w600,
+                  fontSize: 12,
+                  color: Color(ColorConstants.btnTextColor)),
+            )),
+          ),
         )
       ],
     ),

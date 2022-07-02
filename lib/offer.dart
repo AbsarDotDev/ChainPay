@@ -23,7 +23,14 @@ class _OfferState extends State<Offer> {
           children: [
             rewardslisttile(context, "tile3.png", TextConstants.rewardconttxt1,
                 TextConstants.rewardconttxt2,
-                redeem: Text("asaa")),
+                redeem: Text(
+                  "asaa",
+                  style: TextStyle(
+                      fontFamily: "spartan",
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                      color: Color(ColorConstants.btnTextColor)),
+                )),
             const SizedBox(height: 12),
             rewardslisttile(context, "tile4.png", TextConstants.rewardconttxt1,
                 TextConstants.rewardconttxt2,

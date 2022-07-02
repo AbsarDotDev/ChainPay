@@ -23,197 +23,199 @@ class _HomeState extends State<Home> {
         padding: const EdgeInsets.all(13),
         color: Color(ColorConstants.baseColor),
         height: MediaQuery.of(context).size.height * 1,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              commonHeading(TextConstants.homeHead1, 16, FontWeight.w600),
-              moreButton()
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              smallIconTIle(
-                  "scanner.png",
-                  "Scan QR Code",
-                  ColorConstants.tilecolor1,
-                  ColorConstants.tilecolor11,
-                  context),
+        child: Expanded(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                commonHeading(TextConstants.homeHead1, 16, FontWeight.w600),
+                moreButton()
+              ]),
               const SizedBox(
-                width: 2,
+                height: 12,
               ),
-              smallIconTIle(
-                  "add_user.png",
-                  "Send to Contact",
-                  ColorConstants.tilecolor2,
-                  ColorConstants.tilecolor22,
-                  context),
-            ]),
-            const SizedBox(
-              height: 8,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              smallIconTIle(
-                  "financial.png",
-                  "Scan QR Code",
-                  ColorConstants.tilecolor3,
-                  ColorConstants.tilecolor33,
-                  context),
-              smallIconTIle(
-                  "swap.png",
-                  "Send to Contact",
-                  ColorConstants.tilecolor4,
-                  ColorConstants.tilecolor44,
-                  context),
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              commonHeading(TextConstants.homeHead2, 16, FontWeight.w600),
-              moreButton()
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              smallIconTIle(
-                  "scanner.png",
-                  "Scan QR Code",
-                  ColorConstants.tilecolor1,
-                  ColorConstants.tilecolor11,
-                  context),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                smallIconTIle(
+                    "scanner.png",
+                    "Scan QR Code",
+                    ColorConstants.tilecolor1,
+                    ColorConstants.tilecolor11,
+                    context),
+                const SizedBox(
+                  width: 2,
+                ),
+                smallIconTIle(
+                    "add_user.png",
+                    "Send to Contact",
+                    ColorConstants.tilecolor2,
+                    ColorConstants.tilecolor22,
+                    context),
+              ]),
               const SizedBox(
-                width: 2,
+                height: 8,
               ),
-              smallIconTIle(
-                  "add_user.png",
-                  "Send to Contact",
-                  ColorConstants.tilecolor2,
-                  ColorConstants.tilecolor22,
-                  context),
-            ]),
-            const SizedBox(
-              height: 8,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-              smallIconTIle(
-                  "financial.png",
-                  "Scan QR Code",
-                  ColorConstants.tilecolor3,
-                  ColorConstants.tilecolor33,
-                  context),
-              smallIconTIle(
-                  "swap.png",
-                  "Send to Contact",
-                  ColorConstants.tilecolor4,
-                  ColorConstants.tilecolor44,
-                  context),
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-              commonHeading(TextConstants.homeHead3, 16, FontWeight.w600),
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Expanded(
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  serviceBox("video-play.png", "Movies"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("bus.png", "Trains"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("bus2.png", "Bus"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("airplane.png", "Flights"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("smart-car2.png", "Car"),
-                ],
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                smallIconTIle(
+                    "financial.png",
+                    "Scan QR Code",
+                    ColorConstants.tilecolor3,
+                    ColorConstants.tilecolor33,
+                    context),
+                smallIconTIle(
+                    "swap.png",
+                    "Send to Contact",
+                    ColorConstants.tilecolor4,
+                    ColorConstants.tilecolor44,
+                    context),
+              ]),
+              const SizedBox(
+                height: 12,
               ),
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-              commonHeading(TextConstants.homeHead4, 16, FontWeight.w600),
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Expanded(
-              child: ListView(
-                shrinkWrap: true,
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  serviceBox("video-play.png", "Movies"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("bus.png", "Movies"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("bus2.png", "Movies"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("airplane.png", "Movies"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  serviceBox("smart-car2.png", "Movies")
-                ],
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                commonHeading(TextConstants.homeHead2, 16, FontWeight.w600),
+                moreButton()
+              ]),
+              const SizedBox(
+                height: 12,
               ),
-            ),
-            const SizedBox(
-              height: 12,
-            ),
-            Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-              commonHeading(TextConstants.homeHead5, 16, FontWeight.w600),
-            ]),
-            const SizedBox(
-              height: 12,
-            ),
-            Expanded(
-              child: ListView(
-                shrinkWrap: false,
-                scrollDirection: Axis.horizontal,
-                children: <Widget>[
-                  teamBox("image_1.png", "Shafiq"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  teamBox("image_2.png", "Absar"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  teamBox("image_3.png", "Subhan"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  teamBox("image_4.png", "Rafay"),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  teamBox("image_5.png", "Ahmed"),
-                ],
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                smallIconTIle(
+                    "scanner.png",
+                    "Scan QR Code",
+                    ColorConstants.tilecolor1,
+                    ColorConstants.tilecolor11,
+                    context),
+                const SizedBox(
+                  width: 2,
+                ),
+                smallIconTIle(
+                    "add_user.png",
+                    "Send to Contact",
+                    ColorConstants.tilecolor2,
+                    ColorConstants.tilecolor22,
+                    context),
+              ]),
+              const SizedBox(
+                height: 8,
               ),
-            ),
-          ],
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+                smallIconTIle(
+                    "financial.png",
+                    "Scan QR Code",
+                    ColorConstants.tilecolor3,
+                    ColorConstants.tilecolor33,
+                    context),
+                smallIconTIle(
+                    "swap.png",
+                    "Send to Contact",
+                    ColorConstants.tilecolor4,
+                    ColorConstants.tilecolor44,
+                    context),
+              ]),
+              const SizedBox(
+                height: 12,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+                commonHeading(TextConstants.homeHead3, 16, FontWeight.w600),
+              ]),
+              const SizedBox(
+                height: 12,
+              ),
+              Expanded(
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    serviceBox("video-play.png", "Movies"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("bus.png", "Trains"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("bus2.png", "Bus"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("airplane.png", "Flights"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("smart-car2.png", "Car"),
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+                commonHeading(TextConstants.homeHead4, 16, FontWeight.w600),
+              ]),
+              const SizedBox(
+                height: 12,
+              ),
+              Expanded(
+                child: ListView(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    serviceBox("video-play.png", "Movies"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("bus.png", "Movies"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("bus2.png", "Movies"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("airplane.png", "Movies"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    serviceBox("smart-car2.png", "Movies")
+                  ],
+                ),
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.start, children: [
+                commonHeading(TextConstants.homeHead5, 16, FontWeight.w600),
+              ]),
+              const SizedBox(
+                height: 12,
+              ),
+              Expanded(
+                child: ListView(
+                  shrinkWrap: false,
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    teamBox("image_1.png", "Shafiq"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    teamBox("image_2.png", "Absar"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    teamBox("image_3.png", "Subhan"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    teamBox("image_4.png", "Rafay"),
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    teamBox("image_5.png", "Ahmed"),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
