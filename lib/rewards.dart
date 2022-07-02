@@ -2,6 +2,8 @@ import 'package:chainpay/color_const.dart';
 import 'package:chainpay/common_widgets/bal_cont_txt.dart';
 import 'package:chainpay/common_widgets/blank_cont.dart';
 import 'package:chainpay/common_widgets/common_heading.dart';
+import 'package:chainpay/common_widgets/rewards_collectnow.dart';
+import 'package:chainpay/common_widgets/rewards_listtile.dart';
 import 'package:chainpay/text_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -116,6 +118,13 @@ class _RewardsState extends State<Rewards> {
               commonHeading(TextConstants.rewardhead2, 15, FontWeight.w600),
             ],
           ),
+          rewardslisttile(context, "tile1.png", TextConstants.rewardconttxt1,
+              TextConstants.rewardconttxt2,
+              b: collectNow()),
+          const SizedBox(height: 12),
+          rewardslisttile(context, "tile2.png", TextConstants.rewardconttxt3,
+              TextConstants.rewardconttxt4,
+              b: collectNow()),
         ],
       ),
     );
